@@ -7,7 +7,13 @@ This project is a Java-based application designed to manage game-related data an
 ## Files
 
 ### 1. `Games.java`
-Handles game-related functionalities, potentially including game mechanics, scoring, or player interactions.
+Defines an abstract class `Games`, serving as a blueprint for various game entities. Key features include:
+   - **Attributes**: `gameID` (unique and immutable), `title`, `publisher`, `releaseYear`, `rating`, and `basePrice`.
+   - **Static Variables**: `id` to generate unique `gameID`s and `count` to track the number of game instances.
+   - **Constructors**: 
+      - Default constructor initializes a game object with default values.
+      - Parameterized constructor allows customization of game attributes while auto-generating `gameID`.
+   - **Abstract Design**: Enables individual stores to extend `Games` and customize attributes as needed.
 
 ### 2. `Store.java`
 Manages store functionalities, such as adding and displaying items, handling transactions, and potentially managing inventory.
@@ -39,3 +45,4 @@ Serves as the main driver for integrating the game and store functionalities, ut
 
 ## Contributing
 If you would like to contribute, please fork the repository, make your changes, and submit a pull request.
+
