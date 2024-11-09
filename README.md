@@ -1,5 +1,5 @@
 
-# Java Video Game Store Management Project
+# GameTrak - Video Game Store Management Project
 
 ## Overview
 This project is a Java-based application designed to manage video game store related data and operations. The application contains multiple classes, each responsible for different aspects of the project, such as game details, store management, and database operations.
